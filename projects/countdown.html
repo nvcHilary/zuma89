@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Countdown</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		html{
+			min-height: 100%;
+		}
+
+		body{
+			background: #4c4c4c;
+			background: -moz-linear-gradient(45deg,  #4c4c4c 0%, #595959 12%, #666666 21%, #474747 31%, #2c2c2c 45%, #000000 60%, #111111 60%, #2b2b2b 69%, #1c1c1c 91%, #131313 100%);
+			background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(21%,#666666), color-stop(31%,#474747), color-stop(45%,#2c2c2c), color-stop(60%,#000000), color-stop(60%,#111111), color-stop(69%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313));
+			background: -webkit-linear-gradient(45deg,  #4c4c4c 0%,#595959 12%,#666666 21%,#474747 31%,#2c2c2c 45%,#000000 60%,#111111 60%,#2b2b2b 69%,#1c1c1c 91%,#131313 100%);
+			background: -o-linear-gradient(45deg,  #4c4c4c 0%,#595959 12%,#666666 21%,#474747 31%,#2c2c2c 45%,#000000 60%,#111111 60%,#2b2b2b 69%,#1c1c1c 91%,#131313 100%);
+			background: -ms-linear-gradient(45deg,  #4c4c4c 0%,#595959 12%,#666666 21%,#474747 31%,#2c2c2c 45%,#000000 60%,#111111 60%,#2b2b2b 69%,#1c1c1c 91%,#131313 100%);
+			background: linear-gradient(45deg,  #4c4c4c 0%,#595959 12%,#666666 21%,#474747 31%,#2c2c2c 45%,#000000 60%,#111111 60%,#2b2b2b 69%,#1c1c1c 91%,#131313 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 );
+	 		color: #fff;
+	 	}
+
+		section{
+			margin: 0px;
+			padding: 0px;
+			opacity: 0.7;
+			text-shadow: 0em 0em 0.1em #fff;
+		}
+		
+		.number{
+			font-size: 400px;
+			font-weight: bold;
+			border: 5px solid #fff;
+			width:450px;
+			height:470px;
+			border-radius: 0 0 100px;
+			box-shadow: 0 0 0.3em #fff;
+			-moz-box-shadow:0 0 0.3em #fff;
+			-webkit-box-shadow:0 0 0.3em #fff;
+			margin-left: 33%;
+		}
+		
+		.days{
+			margin-left: 32%;
+			margin-top: 3%;
+			font-size: 77px;
+		}
+		
+		footer{
+			font-size: 22px;
+			color: #E8BACC;
+			font-family: 'Allura', cursive;
+			margin-top: 1%;
+			margin-left: 32.5%;
+		}
+		
+		footer a{
+			color:inherit;
+			text-decoration: none;
+		}
+		
+		footer a:hover{
+			color: #fff;
+			opacity: 0.7;
+			text-decoration: underline;
+		}
+	</style>
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="container">
+		<section>
+			<section class="number">10</section>
+			<section class="days">Days till Break</section>
+		</section>
+		<footer>
+			Designed by <a href="http://zuma89.github.com">Hilary Ho</a>. A property of <a href="http://nexvend.com">NexVend Sdn Bhd</a>.
+		</footer>
+	</div>
+
+	<script>
+		$(function(){		
+			$('#container').hide().fadeIn(6000);
+		});
+	</script>
+</body>
+</html>

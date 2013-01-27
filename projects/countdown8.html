@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Countdown calendar until break">
+    <meta name="author" content="Hilary Ho">
+	<title>Countdown</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		html{
+			min-height: 100%;
+		}
+
+		body{
+			background:-moz-repeating-linear-gradient(45deg,purple 20px,indigo 60px,blue 110px,green 160px,yellow 200px,orange 240px,red 290px,purple 320px);
+			background:-webkit-gradient(linear,right top, left bottom,color-stop(0.01,purple),color-stop(0.1,indigo),color-stop(0.2,blue),color-stop(0.4,green),color-stop(0.5,yellow),color-stop(0.7,orange),color-stop(0.8,red),color-stop(0.99,purple));
+			-webkit-background-size: 20% 100%;
+	 		color: #fff;
+	 		text-align: center;
+	 	}
+
+		.number{
+			font-size: 400px;
+			font-weight: bold;
+			text-shadow: 0em 0em 0.1em #fff;
+		}
+		
+		.days{
+			margin-top: 3%;
+			font-size: 77px;
+			opacity: 0.7;
+			text-shadow: 0em 0em 0.1em #fff;
+		}
+		
+		footer{
+			font-size: 22px;
+			color: #000;
+			font-family: 'Allura', cursive;
+			margin-top: 1%;
+		}
+		
+		footer a{
+			color:inherit;
+			text-decoration: none;
+		}
+		
+		footer a:hover{
+			color: #fff;
+			opacity: 0.7;
+			text-decoration: underline;
+		}
+	</style>
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="container">
+		<section>
+			<section class="number">8</section>
+			<section class="days">Days till Break</section>
+		</section>
+		<footer>
+			Designed by <a href="http://zuma89.github.com">Hilary Ho</a>. A product of <a href="http://nexvend.com">NexVend Sdn Bhd</a>.
+		</footer>
+	</div>
+
+	<script>
+		$(function(){		
+			$('#container').hide().fadeIn(6000);
+		});
+	</script>
+</body>
+</html>
