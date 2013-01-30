@@ -61,7 +61,7 @@
     <hr>
 
       <footer class="footer">
-        <p class="pull-right"><a href="#top">Back To Top</a><i class="icon-arrow-up"></i></p>
+        <p class="pull-right" id="#back-top"><a href="#top">Back To Top</a><i class="icon-arrow-up"></i></p>
         <p>Designed by Hilary Ho. A product of<a href="http://www.nexvend.com/" target="_blank" title="NexVend Sdn Bhd Official Site"> NexVend Sdn Bhd</a>.</p>
       </footer>
 
@@ -76,6 +76,11 @@
     <script>
       $(function(){
         $('section, .container-narrow').hide().fadeIn(2000);
+        $('#back-top a').click(function () {
+          $('body, html').animate({
+            scrollTop: 0}, 800);
+        return false;
+    });
       });
     </script>
   </body>
